@@ -1,0 +1,141 @@
+.containerCalculator{
+    text-align: center;
+    margin-top: 12%;
+}
+
+.calculator{
+    background-color: lightgrey;
+    display: inline-block;
+    width: 30%;
+    border: solid darkgrey 4px;
+    border-radius: 5px;
+}
+
+.containerScreen{
+    width: 60%;
+    padding-top: 2%;
+    margin:0 auto;
+}
+
+.containerScreen2{
+    width: 60%;
+    margin:0 auto;
+}
+
+.screen{
+    border: solid darkgrey 1px;
+    border-radius: 5px;
+    background-color: white;
+    text-align-last: left;
+    min-height: 20px;
+    width: 100%;
+}
+
+.screen2{
+    border: solid darkgrey 1px;
+    border-radius: 5px;
+    background-color: white;
+    text-align-last:end;
+    min-height: 20px;
+    width: 100%;
+}
+
+.containerButtons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 2%;
+    height: 200px;
+}
+
+.numbers{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:150px;
+    height: 200px;
+    
+}
+
+.button{
+    margin: 4px;
+    padding: 8px 10px;
+    max-height: 40px;
+    max-width: 40px;
+}
+
+.operators{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width:150px;
+    height: 200px;
+    
+}
+
+#toThePowerOf{
+    padding-top: 5px;
+}
+
+#ansButton{
+    padding-left: 7px;
+}
+
+@media(max-width: 1015px){
+    .calculator{
+        background-color: lightgrey;
+        display: inline-block;
+        width: 30%;
+        height:520px;
+    }
+
+    .button{
+        margin: 4px;
+        padding: 8px 12px;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .operators{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:150px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    #acButton{
+        padding-left: 8px;
+    }
+}
+
+
+@media(max-width: 514px){
+    .calculator{
+        background-color: lightgrey;
+        display: inline-block;
+        width: 60%;
+        height:520px;
+    }
+
+    .button{
+        margin: 4px;
+        padding: 8px 12px;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .operators{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:150px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    #acButton{
+        padding-left: 8px;
+    }
+}
