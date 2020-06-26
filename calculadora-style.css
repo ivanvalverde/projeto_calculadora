@@ -6,19 +6,19 @@
 .calculator{
     background-color: lightgrey;
     display: inline-block;
-    width: 30%;
-    border: solid darkgrey 4px;
+    width: 35%;
+    border: solid darkgrey 10px;
     border-radius: 5px;
 }
 
 .containerScreen{
-    width: 60%;
+    width: 80%;
     padding-top: 2%;
     margin:0 auto;
 }
 
 .containerScreen2{
-    width: 60%;
+    width: 80%;
     margin:0 auto;
 }
 
@@ -29,6 +29,7 @@
     text-align-last: left;
     min-height: 20px;
     width: 100%;
+    overflow: hidden;
 }
 
 .screen2{
@@ -38,6 +39,7 @@
     text-align-last:end;
     min-height: 20px;
     width: 100%;
+    overflow: hidden;
 }
 
 .containerButtons{
@@ -45,6 +47,15 @@
     flex-wrap: wrap;
     justify-content: center;
     padding-bottom: 2%;
+    height: 200px;
+}
+
+.trigonometry{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width:100px;
     height: 200px;
 }
 
@@ -81,12 +92,16 @@
     padding-left: 7px;
 }
 
-@media(max-width: 1015px){
+#radDegree{
+    padding-left: 6px;
+}
+
+@media(max-width: 1250px){
     .calculator{
         background-color: lightgrey;
         display: inline-block;
         width: 30%;
-        height:520px;
+        height:530px;
     }
 
     .button{
@@ -110,13 +125,99 @@
     }
 }
 
-
-@media(max-width: 514px){
+@media(max-width: 849px){
     .calculator{
         background-color: lightgrey;
         display: inline-block;
         width: 60%;
-        height:520px;
+        height: 330px;
+    }
+
+    .button{
+        margin: 4px;
+        padding: 8px 12px;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .operators{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:150px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    #acButton{
+        padding-left: 8px;
+    }
+}
+
+@media(max-width: 683px){
+    .calculator{
+        background-color: lightgrey;
+        display: inline-block;
+        width: 60%;
+        height: 530px;
+    }
+
+    .button{
+        margin: 4px;
+        padding: 8px 12px;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .operators{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:150px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    #acButton{
+        padding-left: 8px;
+    }
+}
+
+@media(max-width: 501px){
+    .calculator{
+        background-color: lightgrey;
+        display: inline-block;
+        width: 90%;
+        height: 330px;
+    }
+
+    .button{
+        margin: 4px;
+        padding: 8px 12px;
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .operators{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width:150px;
+        height: 200px;
+        margin-top: 20px;
+    }
+
+    #acButton{
+        padding-left: 8px;
+    }
+}
+
+@media(max-width: 460px){
+    .calculator{
+        background-color: lightgrey;
+        display: inline-block;
+        width: 90%;
+        height: 530px;
     }
 
     .button{
